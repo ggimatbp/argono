@@ -1,0 +1,30 @@
+.actions{
+    display:flex;
+}
+
+.btn{
+
+    font-weight:$fontWeight;
+    background-color: $primaryColor;
+    color: $btnPrimaryColorText;
+    border:2px solid transparent;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.wrap{
+    width: 33%;
+}
+
+.d-flex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-column{
+    flex-direction: column;
+    align-content: center;
+}
+

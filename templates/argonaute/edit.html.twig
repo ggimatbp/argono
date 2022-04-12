@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier Argonaute{% endblock %}
+
+{% block body %}
+<header>
+  <h1>
+    <img src="https://www.wildcodeschool.com/assets/logo_main-e4f3f744c8e717f1b7df3858dce55a86c63d4766d5d9a7f454250145f097c2fe.png" alt="Wild Code School logo" />
+    Les Argonautes
+  </h1>
+</header>
+<main>
+    <h2>Modifier {{ argonaute.name }}</h2>
+    <div class="d-flex flex-column">
+        {{ include('argonaute/_form.html.twig', {'button_label': 'Modifier'}) }}
+        <div class="actions">
+            <form action="{{ path('app_argonaute_index') }}" method="get">
+                <button class="btn" type="submit"><i class="fas fa-undo"></i></button>
+            </form>
+            {{ include('argonaute/_delete_form.html.twig') }}
+        </div>
+    </div>
+</main>
+<footer>
+  <p>Réalisé par Jason en Anthestérion de l'an 515 avant JC</p>
+</footer>
+{% endblock %}
